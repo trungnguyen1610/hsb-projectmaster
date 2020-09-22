@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>HSB</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- line aweasome -->
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+  <!-- slick -->
+  <link rel="stylesheet" href="./assets/css/slick.css">
+  <link rel="stylesheet" href="./assets/css/slick-theme.css">
+
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+  <main>
+    <header id="header">
+      <div class="nav__pc">
+
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+            <ul class="nav__logo">
+              <img src="./assets/images/logo.png" alt="">
+            </ul>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-9 d-flex align-items-center justify-content-end">
+            <ul class="nav__list">
+              <li>
+                <a href="" class="nav__link">Home</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#">Home1</a>
+                  </li>
+                  <li><a href="#">Home2</a></li>
+                  <li><a href="#">Home3</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="" class="nav__link">About Application</a>
+                <ul class="sub-menu">
+                  <li><a href="#">About1</a></li>
+                  <li><a href="#">About2</a></li>
+                  <li><a href="#">About3</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="" class="nav__link">Support </a>
+                <ul class="sub-menu">
+                  <li><a href="#">Support1</a></li>
+                  <li><a href="#">Support2</a></li>
+                  <li><a href="#">Support3</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="" class="nav__link">Blog</a>
+
+              </li>
+
+              <div class="btn-group">
+                <a href="" class="nav__link btn-custom btn-custom--bluedark">Get Started</a>
+                <a href="" class="nav__link btn-custom btn-custom--bluelight">Buy Now</a>
+              </div>
+
+              <!-- button toggle overlay -->
+              <label for="nav-mobile-input" class="nav__bars-btn">
+
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                  class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512">
+                  <path fill="currentColor"
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                  </path>
+                </svg>
+              </label>
+              <input onchange="toggleOverlay()" hidden type="checkbox" name="" class="nav__input" id="nav-mobile-input">
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <!-- overlay full screen(mobile only) -->
+      <label for="nav-mobile-input" id="nav__mobile-overlay" class="nav__overlay"></label>
+      <div id="nav__mobile" class="nav__mobile">
+        <label for="nav-mobile-input" class="nav__mobile-close">
+          <i class="las la-times"></i>
+        </label>
+
+        <ul class="nav__mobile-list">
+          <li>
+            <a href="" class="nav__mobile-link">
+              <i class="las la-home"></i>Home</a>
+            </a>
+          </li>
+          <li>
+            <a href="" class="nav__mobile-link">
+              <i class="las la-address-card"></i>
+              About Application</a>
+          </li>
+          <li>
+            <a href="" class="nav__mobile-link">
+              <i class="las la-question-circle"></i>
+              Support</a>
+          </li>
+          <li>
+            <a href="" class="nav__mobile-link">
+              <i class="las la-rss"></i>
+              Blog </a>
+          </li>
+
+          <div class="btn-group btn-group--mobile d-flex align-items-center justify-content-center">
+            <a href="" class="nav__link btn-custom btn-custom--bluedark">Get Started</a>
+            <a href="" class="nav__link btn-custom btn-custom--bluelight">Buy Now</a>
+          </div>
+
+
+
+
+        </ul>
+
+      </div>
+
+    </header>
+    <section class="section whatwedo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="box">
+              <h3 class="box__title ">WP + iOS + Android</h3>
+              <div class="box__round box__round--lightpink"></div>
+              <p class="box__content">
+                Based on ReactJS and React Native, HsBlog not only is a WP theme, but also let you to build
+                your iOS + Android App Native App
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box">
+              <h3 class="box__title">Single page application</h3>
+              <div class="box__round box__round--lightgreen"></div>
+              <p class="box__content">
+                SPA improves your Customer Experience. When navigating from a page to another page, HsBlog WILL NOT
+                REFRESH Browser like other themes.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box">
+              <h3 class="box__title">Drag & Drop Page Builder</h3>
+              <div class="box__round box__round--lightgray"></div>
+              <p class="box__content">
+                We have created our own Page Builder for HsBlog. It allows you to build either Web Page or App Home
+                page.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="box">
+              <h3 class="box__title ">Elite Support</h3>
+              <div class="box__round box__round--heavygray"></div>
+              <p class="box__content">
+                help.highspeedblog.com is our Help Center where you can find useful information on Documentation page
+                and You can ask for us anything there.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section trusted">
+      <div class="col-md-12 title-center">
+        <div class="heading">
+          <h2 class="heading__title">Trusted by over <span style="color: #5E68F9;">1000</span> users</h2>
+          <p class="heading__content">There are many things that are important to catalog design. Your images must be
+            sharp and appealing.</p>
+        </div>
+      </div>
+      <div class="trusted-wrap">
+        <div class="background-half"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="img-fluid mbot-20 trusted--banner w-100" src="./assets/images/1.png" alt="">
+            </div>
+            <div class="col-lg-6">
+              <div class="slick-sliderqoute">
+                <div>
+                  <div class="qoute">
+                    <h3 class="qoute__title">
+                      <div class="qoute__round qoute__round--lightgreen"></div>
+                      <i class="las la-quote-right"></i>
+                    </h3>
+                    <p class="qoute__content">
+                      Only five stars! and this despite the fact that the topic is still under improvement. I hope
+                      future
+                      updates will help her become even better. A great team with a great idea of the catalog.
+                    </p>
+                    <p class="quote__author">Dustin Barnes</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="qoute">
+                    <h3 class="qoute__title">
+                      <div class="qoute__round qoute__round--pink"></div>
+                      <i class="las la-quote-right"></i>
+                    </h3>
+                    <p class="qoute__content">
+                      Only five stars! and this despite the fact that the topic is still under improvement. I hope
+                      future
+                      updates will help her become even better. A great team with a great idea of the catalog.
+                    </p>
+                    <p class="quote__author">Dustin Barnes</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="qoute">
+                    <h3 class="qoute__title">
+                      <div class="qoute__round qoute__round--lightblue"></div>
+                      <i class="las la-quote-right"></i>
+                    </h3>
+                    <p class="qoute__content">
+                      Only five stars! and this despite the fact that the topic is still under improvement. I hope
+                      future
+                      updates will help her become even better. A great team with a great idea of the catalog.
+                    </p>
+                    <p class="quote__author">Dustin Barnes</p>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    <section class="section features ">
+      <div class="background-full"></div>
+      <div class="col-md-12 text-center">
+        <div class="heading">
+          <h2 class="heading__title">Essential <span style="color: #5E68F9;">features</span> for you</h2>
+          <p class="heading__content">There are many things that are important to catalog design. Your images must be
+            sharp and appealing.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="social">
+              <div class="social__icon pink">
+                <i class="lar la-heart"></i>
+              </div>
+              <div class="social__title">Favorite Post</div>
+              <div class="social__content">It's a useful feature for your customers: They can SAVE an useful article and
+                easily reach it in future under Favorite Store.</div>
+            </div>
+
+          </div>
+          <div class="col-lg-4">
+            <div class="social ">
+              <div class="social__icon purple">
+                <i class="las la-history"></i>
+              </div>
+              <div class="social__title">Awesome Mega Menu</div>
+              <div class="social__content">A useful feature helps you can add more information to your menu but still
+                keep
+                it simple and clean</div>
+            </div>
+
+          </div>
+          <div class="col-lg-4">
+            <div class="social">
+              <div class="social__icon lightblue">
+                <i class="las la-archive"></i>
+              </div>
+              <div class="social__title">Theme Options</div>
+              <div class="social__content">Here you can customize Header Style, Footer Style, Heading Tags's Font,
+                Social
+                Networks, MailChimp, Youtube and much more ...</div>
+            </div>
+
+          </div>
+          <div class="col-lg-4">
+            <div class="social">
+              <div class="social__icon heavyblue">
+                <i class="las la-cog"></i>
+              </div>
+              <div class="social__title">Social Login</div>
+              <div class="social__content">In addition Default WordPress Login, Customer can easily signin / signup to
+                your
+                site with their Facebook and Apple.</div>
+            </div>
+
+          </div>
+          <div class="col-lg-4">
+            <div class="social">
+              <div class="social__icon lightpink">
+                <i class="las la-thumbs-up"></i>
+              </div>
+              <div class="social__title">Google reCaptcha V3</div>
+              <div class="social__content">Protects your site website forms from spam entries while letting real people
+                pass through with ease</div>
+            </div>
+
+          </div>
+          <div class="col-lg-4">
+            <div class="social">
+              <div class="social__icon green">
+                <i class="las la-check-circle"></i>
+              </div>
+              <div class="social__title">Favorite Post</div>
+              <div class="social__content">It's a useful feature for your customers: They can SAVE an useful article and
+                easily reach it in future under Favorite Store.</div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <section class="section popularpost">
+      <div class="col-md-12 text-center">
+        <div class="heading">
+          <h2 class="heading__title">Popular post</h2>
+          <p class="heading__content">There are many things that are important to catalog design. Your images must
+            be sharp and appealing.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <a href="" class="post">
+              <div class="aspect-ratio">
+                <img class="img-fluid w-100" src="./assets/images/post1.png" alt="">
+              </div>
+              <div class="post__des">
+                <div class="post__des-icon">Design
+                  <div class="post__des-icon-layer"></div>
+                  <div class="post__des-icon-cover"></div>
+                </div>
+                <p class="post__des-title">Alii autem quibus ego assentior</p>
+                <p class="post__des-content">
+                  <span class="post__des-content-date">November 9, 2019 •</span>
+                  <span class="post__des-content-comment"> 03 Comments</span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="" class="post">
+              <div class="aspect-ratio">
+                <img class="img-fluid w-100" src="./assets/images/post2.png" alt="">
+              </div>
+              <div class="post__des">
+                <div class="post__des-icon">Design
+                  <div class="post__des-icon-layer"></div>
+                  <div class="post__des-icon-cover"></div>
+                </div>
+                <p class="post__des-title">Alii autem quibus ego assentior</p>
+                <p class="post__des-content">
+                  <span class="post__des-content-date">November 9, 2019 •</span>
+                  <span class="post__des-content-comment"> 03 Comments</span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="" class="post">
+              <div class="aspect-ratio">
+                <img class="img-fluid w-100" src="./assets/images/post3.png" alt="">
+              </div>
+              <div class="post__des">
+                <div class="post__des-icon">Design
+                  <div class="post__des-icon-layer"></div>
+                  <div class="post__des-icon-cover"></div>
+                </div>
+                <p class="post__des-title">Alii autem quibus ego assentior</p>
+                <p class="post__des-content">
+                  <span class="post__des-content-date">November 9, 2019 •</span>
+                  <span class="post__des-content-comment"> 03 Comments</span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="" class="post">
+              <div class="aspect-ratio">
+                <img class="img-fluid w-100" src="./assets/images/post4.png" alt="">
+              </div>
+              <div class="post__des">
+                <div class="post__des-icon">Design
+                  <div class="post__des-icon-layer"></div>
+                  <div class="post__des-icon-cover"></div>
+                </div>
+                <p class="post__des-title">Alii autem quibus ego assentior</p>
+                <p class="post__des-content">
+                  <span class="post__des-content-date">November 9, 2019 •</span>
+                  <span class="post__des-content-comment"> 03 Comments</span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="" class="post">
+              <div class="aspect-ratio">
+                <img class="img-fluid w-100" src="./assets/images/post5.png" alt="">
+              </div>
+              <div class="post__des">
+                <div class="post__des-icon">Design
+                  <div class="post__des-icon-layer"></div>
+                  <div class="post__des-icon-cover"></div>
+                </div>
+                <p class="post__des-title">Alii autem quibus ego assentior</p>
+                <p class="post__des-content">
+                  <span class="post__des-content-date">November 9, 2019 •</span>
+                  <span class="post__des-content-comment"> 03 Comments</span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="" class="post">
+              <div class="aspect-ratio">
+                <img class="img-fluid w-100" src="./assets/images/post6.png" alt="">
+              </div>
+              <div class="post__des">
+                <div class="post__des-icon">Design
+                  <div class="post__des-icon-layer"></div>
+                  <div class="post__des-icon-cover"></div>
+                </div>
+                <p class="post__des-title">Alii autem quibus ego assentior</p>
+                <p class="post__des-content">
+                  <span class="post__des-content-date">November 9, 2019 •</span>
+                  <span class="post__des-content-comment"> 03 Comments</span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="" class="post">
+              <div class="aspect-ratio">
+                <img class="img-fluid w-100" src="./assets/images/post7.png" alt="">
+              </div>
+              <div class="post__des">
+                <div class="post__des-icon">Design
+                  <div class="post__des-icon-layer"></div>
+                  <div class="post__des-icon-cover"></div>
+                </div>
+                <p class="post__des-title">Alii autem quibus ego assentior</p>
+                <p class="post__des-content">
+                  <span class="post__des-content-date">November 9, 2019 •</span>
+                  <span class="post__des-content-comment"> 03 Comments</span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="" class="post">
+              <div class="aspect-ratio">
+                <img class="img-fluid w-100" src="./assets/images/post8.png" alt="">
+              </div>
+              <div class="post__des">
+                <div class="post__des-icon">Design
+                  <div class="post__des-icon-layer"></div>
+                  <div class="post__des-icon-cover"></div>
+                </div>
+                <p class="post__des-title">Alii autem quibus ego assentior</p>
+                <p class="post__des-content">
+                  <span class="post__des-content-date">November 9, 2019 •</span>
+                  <span class="post__des-content-comment"> 03 Comments</span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="" class="post">
+              <div class="aspect-ratio">
+                <img class="img-fluid w-100" src="./assets/images/post9.png" alt="">
+              </div>
+              <div class="post__des">
+                <div class="post__des-icon">Design
+                  <div class="post__des-icon-layer"></div>
+                  <div class="post__des-icon-cover"></div>
+                </div>
+                <p class="post__des-title">Alii autem quibus ego assentior</p>
+                <p class="post__des-content">
+                  <span class="post__des-content-date">November 9, 2019 •</span>
+                  <span class="post__des-content-comment"> 03 Comments</span>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- slick -->
+  <script src="./assets/js/slick.min.js"></script>
+
+  <!-- script -->
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

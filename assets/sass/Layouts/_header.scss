@@ -1,0 +1,215 @@
+#header {
+  .nav__pc {
+    position: relative;
+    width: 100%;
+    padding: 22px 39px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all ease-out 0.5s;
+    -webkit-transition: all ease-in 0.5s;
+    -moz-transition: all ease-in 0.5s;
+    -ms-transition: all ease-in 0.5s;
+    -o-transition: all ease-in 0.5s;
+    &.fixed {
+      background-color: #fff;
+      position: fixed;
+      z-index: 999;
+      box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.06);
+      transition: all ease-out 0.3s;
+      -webkit-transition: all ease-out 0.3s;
+      -moz-transition: all ease-out 0.3s;
+      -ms-transition: all ease-out 0.3s;
+      -o-transition: all ease-out 0.3s;
+    }
+  }
+}
+#header {
+  .nav__pc {
+    .nav__list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      li {
+        position: relative;
+        padding: 5px 30px;
+        white-space: nowrap;
+        &:hover {
+          .sub-menu {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+        .sub-menu {
+          position: absolute;
+          visibility: hidden;
+          opacity: 0;
+          left: 0;
+          transition: all 0.3s;
+          z-index: 1000;
+          background: #616ae8;
+          box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.06);
+          li {
+            border-bottom: 1px solid #fff;
+            position: relative;
+            width: 18rem;
+            a {
+              color: #fff;
+            }
+          }
+        }
+        a {
+          color: $color-gray-2;
+        }
+      }
+    }
+  }
+
+  .btn-group {
+    .btn--bluedark {
+      margin-right: 15px;
+    }
+  }
+}
+.nav__list li:nth-child(4) {
+  margin-right: 35px !important;
+}
+/* mobile nav */
+.nav__bars-btn {
+  width: 28px;
+  height: 28px;
+  display: none;
+}
+.nav__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  animation: fadeIn ease-in-out 0.5s;
+  -webkit-animation: fadeIn ease-in-out 0.5s;
+}
+
+.nav__mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 320px;
+  max-width: 100%;
+  background-color: rgba(97, 106, 232, 0.6);
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  .nav__mobile-list {
+    .btn-group--mobile {
+      padding-top: 30px;
+    }
+  }
+}
+.nav__mobile .logo {
+  text-align: center;
+}
+.nav__mobile .nav__mobile-list li a {
+  color: $color-white-0;
+  font-size: 20px;
+  line-height: 65px;
+  display: inline-block;
+  padding-left: 40px;
+  transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+}
+.nav__mobile .nav__mobile-list li {
+  border-top: 1px solid rbga(255, 255, 255, 0.1);
+  border-bottom: 1px solid $color-white-0;
+}
+.nav__mobile .nav__mobile-list li:hover a {
+  padding-left: 50px;
+}
+
+.nav__mobile-list {
+  margin-top: 24px;
+}
+.nav__mobile-link {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 0;
+  font-size: 1.4rem;
+  display: block;
+}
+.nav__mobile-close {
+  font-size: 2rem;
+  color: #666;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+
+@media (max-width: 575.98px) {
+  .nav__bars-btn {
+    display: block;
+  }
+  .nav__list .nav__link {
+    display: none;
+  }
+  .nav__pc .nav__list li {
+    padding-right: 0;
+  }
+  .nav__pc {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .nav__bars-btn {
+    display: block;
+  }
+  .nav__list {
+    margin-left: 0 !important;
+  }
+  .nav__list .nav__link {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .nav__bars-btn {
+    display: block;
+  }
+  .nav__list .nav__link {
+    display: none;
+  }
+  header {
+    max-width: 960px;
+  }
+  .nav__list {
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+@media (min-width: 1200px) {
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

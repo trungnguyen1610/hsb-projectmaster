@@ -1,0 +1,56 @@
+
+
+.pink{
+  
+   background-color:  rgba(253, 155, 155, 0.3);
+   color: $color-pink;
+}
+.lightpink{
+    background-color: rgba(241, 107, 172, 0.3);
+    color: $color-light-pink-2;
+}
+.purple{
+    background-color: rgba(176, 107, 241, 0.3);
+    color: $color-purple;
+}
+.lightblue{
+    background-color: rgba(69, 204, 219, 0.3);
+    color: $color-light-blue;
+}
+.heavyblue{
+    background-color: rgba(84, 92, 240, 0.3);
+    color: $color-heavy-blue;
+}
+.green{
+    background-color: rgba(72, 222, 87, 0.3);
+    color: $color-green;
+}
+// fix lại
+.box__round--lightpink{
+    background-color: $color-light-pink;
+}
+
+.box__round--lightgreen{
+    background-color: $color-light-green-1;
+}
+.box__round--lightgray{
+    background-color: $color-light-gray;
+}
+
+.box__round--heavygray{
+    background-color: $color-heavy-gray;
+}
+.section {
+    padding: 8rem 0;
+    position: relative;
+}
+.qoute__round--pink{
+    background-color:$color-heavy-pink;
+}
+.qoute__round--lightgreen{
+    background-color:$color-light-green;
+}
+.qoute__round--lightblue{
+    background-color:$color-light-blue;
+}
+

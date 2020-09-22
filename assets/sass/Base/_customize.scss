@@ -1,0 +1,44 @@
+// slick
+
+.slick-dots li button:before {
+  font-size: 5rem;
+  opacity: 1;
+  color: #e8e8eb;
+}
+.slick-dots {
+  bottom: -25%;
+  text-align: left;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #5e68f9;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+.slick-dots {
+  @include for-phone-only {
+    bottom: -10%;
+  }
+  @include for-tablet-portrait-up{
+    bottom: -10%;
+  }
+  @include for-tablet-landscape-up{
+    bottom:-10%;
+  }
+  
+}
+
+//library
+
+  .container {
+    @include  for-big-desktop-up{
+      max-width: 120rem;
+    }
+    @media (min-width: 1300px) {
+        max-width: 130rem;
+    }
+  }
+

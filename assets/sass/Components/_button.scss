@@ -1,0 +1,27 @@
+// .btn--bluedark{
+//     @include styleButton($color-white-0,$color-blue-0,$color-blue-0,$fs-2,$fw-1,$pd-3 - 5, $pd-4 + 6,$border-radius-2);
+//     &:hover{
+//         @include hoverButton($color-blue-0,$color-white-0,$color-blue-0);
+//     }
+// }
+
+// .btn--bluelight{
+//     @include styleButton($color-white-0,$color-blue-1,$color-blue-0,$fs-2,$fw-1,$pd-3 - 5, $pd-4 + 6,$border-radius-2);
+//     &:hover{
+//         @include hoverButton($color-blue-0,$color-white-0,$color-blue-0);
+//     }
+// }
+.btn-custom{
+  padding: 1.2rem 1.25rem 1rem 1.15rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+.btn-custom--bluedark {
+  @include styleButton($color-white-0, $color-blue-0, $fs-1, $border-radius-1);
+  
+}
+.btn-custom--bluelight {
+
+  @include styleButton($color-white-0, $color-light-green, $fs-1, $border-radius-1);
+}

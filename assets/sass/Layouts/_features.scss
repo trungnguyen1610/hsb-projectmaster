@@ -1,0 +1,28 @@
+.social {
+  .social__item {
+    padding: 3rem;
+    background: #fff;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    border: 1px solid #F2F2F3;
+    height: 289px;
+    max-height: 100%;
+  }
+}
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
